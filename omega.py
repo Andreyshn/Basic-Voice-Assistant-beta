@@ -4,8 +4,8 @@ def ShopList(dish1,dish2):
     list2 = set(dish2.keys())
     MainList = list1.union(list2)
     ReadyList = {}
-    print(MainList)
-    print()
+    #print(MainList)
+    #print()
     for bash in MainList:
         if bash in dish1:
             a = (dish1[bash])
@@ -26,7 +26,7 @@ def ShopList(dish1,dish2):
                 pass
         else:
             pass
-    #print(ReadyList) #добавил второй
+    print(ReadyList) #добавил второй
 
 pizza = {'мука, кг': 1,
          'помидоры, кг': 1.5,
