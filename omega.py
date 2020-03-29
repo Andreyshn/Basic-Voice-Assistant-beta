@@ -1,5 +1,5 @@
 
-def ShopList(dish1,dish2):
+def print_shopping_list(dish1,dish2):
     list1 =set(dish1.keys())
     list2 = set(dish2.keys())
     MainList = list1.union(list2)
@@ -26,7 +26,8 @@ def ShopList(dish1,dish2):
                 pass
         else:
             pass
-    print(ReadyList) #добавил второй
+    for s in ReadyList:
+        print(s +":", ReadyList[s]) #Вывод по формату
 
 pizza = {'мука, кг': 1,
          'помидоры, кг': 1.5,
@@ -40,4 +41,4 @@ salad = {'огурцы, кг': 1,
          'оливковое масло, л': 0.1,
          'листья салата, кг': 0.4}
 
-ShopList(pizza, salad)
+print_shopping_list(pizza, salad)
